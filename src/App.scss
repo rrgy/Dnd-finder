@@ -1,0 +1,24 @@
+.App {
+  text-align: center;
+}
+// canvas{
+//   margin: 0;
+//   padding: 0;
+//   width:100%;
+//   height: 100%;
+// }
+body{
+  margin:0;
+  height: 100vh;
+  // background: linear-gradient(to bottom, #5d5c61, #938e94)
+}
+
+header{
+  background: white;
+  height:60px;
+  .header-button{
+    background: transparent;
+    border: none;
+  }
+}
+
