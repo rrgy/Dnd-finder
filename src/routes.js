@@ -1,11 +1,11 @@
 import React from 'react'
 import { Switch, Route } from 'react-router-dom'
 import Character from './Components/Character'
-import ChatList from './Components/ChatList'
+import ChatList from './Components/Chat/ChatList'
 import Lfg from './Components/Lfg'
 import Login from './Components/Login'
 import NewCharacter from './Components/NewCharacter'
-import Chat from './Components/Chat'
+import Chat from './Components/Chat/Chat'
 import CreatePost from './Components/CreatePost'
 
 export default (

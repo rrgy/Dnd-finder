@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { loginUser } from '../redux/reducer'
 import axios from 'axios'
-import Dice from './Dice'
+// import Dice from './Dice'
 
 
 
@@ -43,12 +43,24 @@ class Login extends Component {
     }
     render() {
         return (
-            <div>Login
-                <Dice />
-                <input name='username' onChange={(e) => this.handleInput(e)}></input>
-                <input name='password' onChange={(e) => this.handleInput(e)} type='password'></input>
-                <button onClick={() => this.register()}>Register</button>
-                <button onClick={() => this.login()}>Login</button>
+            <div className='login-container'>
+                <div className='login'>
+                    <input name='username' onChange={(e) => this.handleInput(e)} autoComplete='off' />
+                    {/* <label for='username' className='label-username'> */}
+                    {/* <span className='content-username'>Username</span> */}
+                    {/* </label> */}
+                    <input name='password' onChange={(e) => this.handleInput(e)} type='password' autoComplete='off' />
+                    {/* <label for='password' className='label-passwrod'>
+                        <span className='content-password'>Password</span>
+                    </label> */}
+                    <div className='login-buttons'>
+                        <button onClick={() => this.register()}>Register</button>
+                        <button onClick={() => this.login()}>Login</button>
+                    </div>
+                </div>
+                {/* <div>
+                    <Dice />
+                </div> */}
             </div>
         )
     }

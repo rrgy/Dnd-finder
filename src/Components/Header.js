@@ -17,7 +17,7 @@ function Header(props) {
         <header>
             <Link to='/character'><button className='header-button'>Character</button></Link>
             <Link to='/lfg'><button className='header-button'>Find Group</button></Link>
-            <Link to='/chat-list'><button className='header-button'>Chat</button></Link>
+            <Link to='/chat'><button className='header-button'>Chat</button></Link>
             <div>{props.user.username}</div>
             <Link to='/'><button onClick={logout}>Log Out</button></Link>
         </header>

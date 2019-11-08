@@ -5,15 +5,62 @@
 body {
   margin: 0;
   height: 100vh;
+  background: #333339;
 }
 
 header {
-  background: white;
+  background: #060607;
   height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 header .header-button {
   background: transparent;
   border: none;
+  color: #f2b233;
+  font-size: 15px;
+}
+
+.login-container {
+  height: 100vh;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.login {
+  width: 300px;
+  height: 300px;
+  background: #292929;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-shadow: 0px 0px 14px 4px #060607;
+          box-shadow: 0px 0px 14px 4px #060607;
+  border-radius: 10px;
 }
 /*# sourceMappingURL=App.css.map */
